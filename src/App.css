@@ -44,10 +44,10 @@ body{
 .nav-links{
   font-weight: 600;
   transition: 0.3s ;
-  gap:35px;
+  gap:10px;
   display: flex;
   list-style:none;
-  text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .nav-links li{
@@ -648,4 +648,9 @@ img {
     font-size: 16px;
   }
 
+}
+@media (max-width: 600px) {
+  .nav-links a {
+    font-size: 11px;
+  }
 }
