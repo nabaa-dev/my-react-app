@@ -607,3 +607,44 @@ img {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-img img {
+    width: 260px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 200px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+}
