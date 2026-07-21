@@ -654,3 +654,28 @@ img {
     font-size: 11px;
   }
 }
+nav, .navbar, header {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 10px 8px !important;
+  box-sizing: border-box !important;
+}
+
+nav ul, .nav-links, .navbar ul, header ul {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+nav a, .nav-links a, .navbar a, header a {
+  font-size: 11px !important;
+  white-space: nowrap !important;
+}
