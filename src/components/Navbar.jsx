@@ -1,14 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar({ darkMode, setDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (isMenuOpen) {
+        setIsHidden(false);
+        return;
+      }
+
+      if (currentScrollY > 70 && currentScrollY > prevScrollY) {
+        // Scrolling down
+        setIsHidden(true);
+      } else {
+        // Scrolling up or at top
+        setIsHidden(false);
+      }
+
+      setPrevScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollY, isMenuOpen]);
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
 
   return (
-    <header className="header-nav">
+    <header className={`header-nav ${isHidden ? "navbar-hidden" : ""}`}>
       <nav className="navbar">
         <div className="logo">
           <a href="#hero">
