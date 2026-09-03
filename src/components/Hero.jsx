@@ -1,50 +1,40 @@
-import { useState } from "react";
 import profile from "../assets/profile.png";
-function Hero(props) {
-  const[count,setCount] =useState(0);
+
+function Hero({ name, job, desc }) {
   return (
-    <section  id="hero" className="hero">
-      <div className="Hero-content">
+    <section id="hero" className="hero">
+      <div className="hero-content">
+        <div className="hero-text">
+          <span className="hero-badge">مرحباً بك في موقعي</span>
+          <h1>{name}</h1>
+          <h2 className="hero-subtitle">{job}</h2>
+          <p className="hero-desc">{desc}</p>
 
-      <div className="hero-text">
-        <h1>{props.name}</h1>
-        <h3>{props.job}</h3>
-        <h3>{props.desc}</h3>
+          <p className="hero-bio">
+            مهندسة ومبرمجة مواقع إلكترونية، أحول الأفكار إلى تجارب رقمية تفاعلية وفعالة،
+            شغوفة بتصميم الواجهات الحديثة وحل المشكلات البرمجية.
+          </p>
 
-        <p>
-          مهندسة ومبرمجة مواقع الكترونية  
-        
-          احول الافكار الى تجارب رقمية وفعالة احب البرمجة. تصميم الواجهات وحل المشاكل
-        </p>
-         <div className="hero-img">
-        <img src={profile}alt="profile"/>
+          <div className="buttons">
+            <a href="#contact" className="btn btn-primary">
+              تواصل معي
+            </a>
+            <a href="#projects" className="btn btn-secondary">
+              مشاريعي
+            </a>
+            <a 
+              href="#about" 
+              className="btn btn-outline"
+            >
+              عني والمزيد
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-img">
+          <img src={profile} alt="نبأ عدنان - مهندسة تقنيات الحاسوب" />
+        </div>
       </div>
-        <div className="buttons">
-          <button className="bto1">تواصل معي</button>
-
-  <button
-
-    onClick={() => setCount(count + 1)}
-
-  >
-
-    اضغط هنا
-
-  </button>
-
-  <button className="bto2">
-
-    تحميل CV
-
-  </button>
-
-</div>
-        <a href="/cv.pdf"download></a>
-  
-      </div>
-      
-      </div>
-
     </section>
   );
 }
