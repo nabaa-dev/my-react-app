@@ -33,7 +33,13 @@ function Hero({ name, job, degreeAr, degreeEn }) {
         </div>
 
         <div className="hero-img">
-          <img src={profile} alt="نبأ عدنان - Nabaa Adnan" />
+          <div className="hero-img-card">
+            <div className="img-glow-backdrop"></div>
+            <div className="img-decorative-line"></div>
+            <div className="img-corner-accent top-accent"></div>
+            <div className="img-corner-accent bottom-accent"></div>
+            <img src={profile} alt="نبأ عدنان - Nabaa Adnan" className="framed-img" />
+          </div>
         </div>
       </div>
     </section>

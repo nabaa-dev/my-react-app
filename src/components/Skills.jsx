@@ -35,7 +35,12 @@ function Skills() {
 
         {skillsImage && (
           <div className="skills-image">
-            <img src={skillsImage} alt="نبأ عدنان - مهارات البرمجة والتطوير" />
+            <div className="skills-img-card">
+              <div className="img-skills-backdrop"></div>
+              <div className="img-geometric-line top-line"></div>
+              <div className="img-geometric-line bottom-line"></div>
+              <img src={skillsImage} alt="نبأ عدنان - مهارات البرمجة والتطوير" className="framed-img" />
+            </div>
           </div>
         )}
       </div>

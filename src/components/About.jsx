@@ -45,7 +45,11 @@ function About() {
         </div>
 
         <div className="about-image">
-          <img src={profile} alt="نبأ عدنان - Nabaa Adnan" />
+          <div className="about-img-card">
+            <div className="img-depth-backdrop"></div>
+            <div className="img-frame-accent"></div>
+            <img src={profile} alt="نبأ عدنان - Nabaa Adnan" className="framed-img" />
+          </div>
         </div>
       </div>
     </section>
