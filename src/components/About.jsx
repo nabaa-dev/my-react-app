@@ -5,10 +5,18 @@ function About() {
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-content">
-          <h2>عني</h2>
+          <h2>عني | About Me</h2>
+          
           <p className="about-description">
-            أنا نبأ عدنان، خريجة دبلوم تقنيات أنظمة الحاسوب وبكالوريوس هندسة تقنيات الحاسوب. 
-            شغوفة بتطوير واجهات الويب الحديثة وأسعى إلى بناء مواقع سريعة، متجاوبة، وسهلة الاستخدام.
+            أنا نبأ عدنان، <strong>خريجة دبلوم أنظمة تقنيات الحاسوب وبكالوريوس هندسة تقنيات الحاسوب</strong>.
+          </p>
+          <p className="about-description-en">
+            <em>Diploma Graduate in Computer Systems Techniques & Bachelor’s Degree in Computer Engineering Techniques</em>
+          </p>
+          <p className="about-text">
+            لدي شغف كبير واهتمام عميق بتطوير الويب و<strong>Front-End Development</strong> والتقنيات الحديثة. 
+            أركز على تحويل الأفكار والتصاميم إلى واجهات برمجية متجاوبة، سريعة، وأنيقة تقدم أفضل تجربة مستخدم ممكنة، 
+            مع استمرار التعلم ومواكبة أحدث أدوات التكنولوجيا وحلول البرمجة.
           </p>
 
           <div className="about-info">
@@ -22,22 +30,22 @@ function About() {
             <div className="info-item">
               <span className="info-icon">🎓</span>
               <div>
-                <strong>التخصص:</strong>
-                <span> هندسة تقنيات الحاسوب</span>
+                <strong>المؤهل الأكاديمي:</strong>
+                <span> دبلوم تقنيات أنظمة الحاسوب + بكالوريوس هندسة تقنيات الحاسوب</span>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">💻</span>
               <div>
-                <strong>المجال:</strong>
-                <span> Front-End Developer</span>
+                <strong>المجال والاهتمام:</strong>
+                <span> Front-End Web Development & Technology</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="about-image">
-          <img src={profile} alt="نبأ عدنان" />
+          <img src={profile} alt="نبأ عدنان - Nabaa Adnan" />
         </div>
       </div>
     </section>

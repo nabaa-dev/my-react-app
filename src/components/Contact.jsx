@@ -18,8 +18,8 @@ function Contact() {
     {
       name: "LinkedIn",
       icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/nabaa-adnan",
-      label: "LinkedIn Profile",
+      link: "https://www.linkedin.com/in/nabaa-adnan-6a691331a/",
+      label: "nabaa-adnan",
       className: "linkedin",
     },
     {

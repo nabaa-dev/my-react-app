@@ -16,9 +16,10 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
         <Hero 
-          name="مرحباً، أنا نبأ عدنان" 
-          job="Front-End Developer" 
-          desc="خريجة هندسة تقنيات الحاسوب & مطورة واجهات React" 
+          name="نبأ عدنان | Nabaa Adnan" 
+          job="Front-End Web Developer" 
+          degreeAr="خريجة دبلوم أنظمة تقنيات الحاسوب وبكالوريوس هندسة تقنيات الحاسوب"
+          degreeEn="Diploma Graduate in Computer Systems Techniques & Bachelor’s Degree in Computer Engineering Techniques"
         />
         <About />
         <Skills />
