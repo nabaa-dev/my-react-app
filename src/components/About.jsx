@@ -4,6 +4,14 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
+        <div className="about-image">
+          <div className="about-img-card">
+            <div className="img-depth-backdrop"></div>
+            <div className="img-frame-accent"></div>
+            <img src={profile} alt="نبأ عدنان - Nabaa Adnan" className="framed-img" />
+          </div>
+        </div>
+
         <div className="about-content">
           <h2>عني | About Me</h2>
           
@@ -41,14 +49,6 @@ function About() {
                 <span> Front-End Web Development & Technology</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="about-image">
-          <div className="about-img-card">
-            <div className="img-depth-backdrop"></div>
-            <div className="img-frame-accent"></div>
-            <img src={profile} alt="نبأ عدنان - Nabaa Adnan" className="framed-img" />
           </div>
         </div>
       </div>

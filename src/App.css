@@ -1239,7 +1239,7 @@ main {
   }
 
   .about-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     gap: 30px;
   }
