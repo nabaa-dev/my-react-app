@@ -3,31 +3,26 @@ import { useState, useEffect } from "react";
 function Navbar({ darkMode, setDarkMode }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
-  const [prevScrollY, setPrevScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
       if (isMenuOpen) {
         setIsHidden(false);
         return;
       }
 
-      if (currentScrollY > 70 && currentScrollY > prevScrollY) {
-        // Scrolling down
+      if (window.scrollY > 20) {
         setIsHidden(true);
       } else {
-        // Scrolling up or at top
         setIsHidden(false);
       }
-
-      setPrevScrollY(currentScrollY);
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollY, isMenuOpen]);
+  }, [isMenuOpen]);
 
   const handleLinkClick = () => {
     setIsMenuOpen(false);
