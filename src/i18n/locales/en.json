@@ -12,17 +12,17 @@
   "hero": {
     "badge": "Welcome to my personal website",
     "name": "Nabaa Adnan",
-    "job": "Software Engineer",
+    "job": "Full-Stack Developer",
     "degree": "🎓 Diploma in Computer Systems Techniques & Bachelor’s in Computer Engineering Techniques",
-    "bio": "Computer Engineering Techniques Engineer and Programmer, with a background in Computer Systems Techniques. I build modern web applications across Front-End and Back-End development, working with APIs and databases to create practical and reliable software solutions.",
+    "bio": "Software Engineer. I build modern web applications across Front-End and Back-End development, working with APIs and databases to create practical and reliable software solutions.",
     "contactBtn": "Contact Me",
     "projectsBtn": "My Projects",
     "aboutBtn": "About & More"
   },
   "about": {
     "title": "About Me",
-    "intro": "I'm Nabaa Adnan, Full-Stack",
-    "description": "Computer Engineering Techniques Engineer and Programmer, with a background in Computer Systems Techniques. I build modern web applications across Front-End and Back-End development, working with APIs and databases to create practical and reliable software solutions.",
+    "intro": "I'm Nabaa Adnan, a Full-Stack Developer",
+    "description": "Software Engineer. I build modern web applications across Front-End and Back-End development, working with APIs and databases to create practical and reliable software solutions.",
     "locationLabel": "Location:",
     "locationValue": "Baghdad - Iraq",
     "degreeLabel": "Academic Qualification:",
