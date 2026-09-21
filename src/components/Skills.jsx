@@ -8,12 +8,13 @@ function Skills() {
     "CSS",
     "JavaScript",
     "React",
-    "Git & GitHub",
-    "REST APIs",
     "Python",
     "FastAPI",
-    "SQL / Databases",
-    "Backend Development",
+    "REST APIs",
+    "SQL",
+    "Git",
+    "GitHub",
+    "Responsive Web Development",
     "Deployment"
   ];
 
