@@ -23,8 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
-  direction: rtl;
-  text-align: right;
+  text-align: start;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

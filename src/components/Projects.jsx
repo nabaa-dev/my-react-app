@@ -1,17 +1,19 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
   const projectList = [
     {
-      title: "Portfolio Website",
-      desc: "موقع شخصي احترافي تم بناؤه وتطويره باستخدام React وCSS، متجاوب بالكامل مع كافة الشاشات ويدعم الوضعين الليلي والنهاري.",
+      title: t('projects.p1_title'),
+      desc: t('projects.p1_desc'),
       tags: ["React", "CSS3", "JavaScript", "Responsive Design"],
       demoLink: "#hero",
       codeLink: "https://github.com/Nabaa-dev",
     },
     {
-      title: "قريباً...",
-      desc: "يجري العمل حالياً على بناء تطبيقات ويب تفاعلية إضافية، وسيتم نشرها وربطها برمز المصدر قريباً.",
+      title: t('projects.p2_title'),
+      desc: t('projects.p2_desc'),
       tags: ["React", "Web Development", "In Progress"],
       codeLink: "https://github.com/Nabaa-dev",
     },
@@ -19,9 +21,9 @@ function Projects() {
 
   return (
     <section id="projects" className="projects">
-      <h2>مشاريعي</h2>
+      <h2>{t('projects.title')}</h2>
       <p className="projects-subtitle">
-        نماذج من أعمالي ومشاريعي البرمجية التي أعمل على تطويرها
+        {t('projects.subtitle')}
       </p>
 
       <div className="projects-container">
@@ -45,7 +47,7 @@ function Projects() {
                   href={project.demoLink}
                   className="project-btn demo-btn"
                 >
-                  <FaExternalLinkAlt /> عرض المشروع
+                  <FaExternalLinkAlt /> {t('projects.demoBtn')}
                 </a>
               )}
               {project.codeLink && (
@@ -55,7 +57,7 @@ function Projects() {
                   rel="noreferrer"
                   className="project-btn code-btn"
                 >
-                  <FaGithub /> كود المشروع
+                  <FaGithub /> {t('projects.codeBtn')}
                 </a>
               )}
             </div>

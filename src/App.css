@@ -1319,3 +1319,19 @@ main {
     justify-content: center;
   }
 }
+
+/* RTL / LTR Overrides */
+[dir="ltr"] .hero-text,
+[dir="ltr"] .about-content,
+[dir="ltr"] .hero-qualifications {
+  text-align: left;
+}
+
+[dir="ltr"] .info-item strong {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+[dir="ltr"] .degree-en {
+  text-align: left;
+}

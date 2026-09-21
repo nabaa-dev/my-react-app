@@ -5,8 +5,10 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
   const contactMethods = [
     {
       name: "GitHub",
@@ -23,7 +25,7 @@ function Contact() {
       className: "linkedin",
     },
     {
-      name: "البريد الإلكتروني",
+      name: t('contact.emailName', { defaultValue: 'Email' }),
       icon: <FaEnvelope />,
       link: "mailto:nabaaadnan284@gmail.com",
       label: "nabaaadnan284@gmail.com",
@@ -47,11 +49,10 @@ function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <h2>تواصل معي</h2>
+      <h2>{t('contact.title')}</h2>
 
       <p className="contact-intro">
-        إذا كان لديك أي استفسار أو ترغب بالتعاون في مشاريع برمجية،
-        يسعدني جداً تواصلك عبر أي من القنوات التالية:
+        {t('contact.intro')}
       </p>
 
       <div className="contact-cards-container">

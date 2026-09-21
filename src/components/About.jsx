@@ -1,6 +1,8 @@
 import profile from "../assets/profile2.jpg";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -13,40 +15,36 @@ function About() {
         </div>
 
         <div className="about-content">
-          <h2>عني | About Me</h2>
+          <h2>{t('about.title')}</h2>
 
           <p className="about-description">
-
-            أنا نبأ عدنان،مبرمجة واجهات امامية
+            {t('about.intro')}
           </p>
 
           <p className="about-text">
-            لدي شغف واهتمام بتطوير الويب و<strong>Front-End Development</strong> والتقنيات الحديثة.
-            أركز على تحويل الأفكار والتصاميم إلى واجهات برمجية متجاوبة، سريعة، وأنيقة تقدم أفضل تجربة مستخدم ممكنة،وسلسة تعمل بكفاءواهتم بكتابة كود منظم وقابل للتطوير مع التركيز على تجربة المستخدم اطمح باستمرار الى تطوير خبرتي في تقنيات الويب
-            وبناء مشاريع ويب احترافية تعكس مهاراتي وشغفي بالبرمجة
-            ومواكبة أحدث أدوات التكنولوجيا وحلول البرمجة.
+            {t('about.description')}
           </p>
 
           <div className="about-info">
             <div className="info-item">
               <span className="info-icon">📍</span>
               <div>
-                <strong>الموقع:</strong>
-                <span> بغداد - العراق</span>
+                <strong>{t('about.locationLabel')}</strong>
+                <span> {t('about.locationValue')}</span>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">🎓</span>
               <div>
-                <strong>المؤهل الأكاديمي:</strong>
-                <span> دبلوم تقنيات أنظمة الحاسوب + بكالوريوس هندسة تقنيات الحاسوب</span>
+                <strong>{t('about.degreeLabel')}</strong>
+                <span> {t('about.degreeValue')}</span>
               </div>
             </div>
             <div className="info-item">
               <span className="info-icon">💻</span>
               <div>
-                <strong>المجال والاهتمام:</strong>
-                <span> Front-End Web Development & Technology</span>
+                <strong>{t('about.interestLabel')}</strong>
+                <span> {t('about.interestValue')}</span>
               </div>
             </div>
           </div>

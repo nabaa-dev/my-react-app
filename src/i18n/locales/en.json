@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact Me",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "toggleMenu": "Toggle Menu"
+  },
+  "hero": {
+    "badge": "Welcome to my personal website",
+    "name": "Nabaa Adnan",
+    "job": "Full-Stack Developer",
+    "degree": "🎓 Diploma in Computer Systems Techniques & Bachelor’s in Computer Engineering Techniques",
+    "bio": "Full-Stack Developer focused on building modern, responsive web applications, working across both frontend and backend development, APIs, databases, and application deployment.",
+    "contactBtn": "Contact Me",
+    "projectsBtn": "My Projects",
+    "aboutBtn": "About & More"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I'm Nabaa Adnan, a Full-Stack Developer",
+    "description": "I have a passion for web development, Full-Stack engineering, and modern technologies. I focus on transforming ideas into robust applications, from responsive, fast, and elegant interfaces to efficient backend services and databases. I care about writing clean, scalable code and I constantly aim to enhance my expertise across the entire stack, build professional projects, and stay updated with the latest tools and solutions.",
+    "locationLabel": "Location:",
+    "locationValue": "Baghdad - Iraq",
+    "degreeLabel": "Academic Qualification:",
+    "degreeValue": "Diploma in Computer Systems Techniques + Bachelor's in Computer Engineering Techniques",
+    "interestLabel": "Field & Interests:",
+    "interestValue": "Full-Stack Web Development & Technology"
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "I have a strong foundation in developing web interfaces using modern technologies. I constantly strive to develop my skills and build professional projects, focusing on writing clean code, designing responsive interfaces, and delivering a distinct user experience.",
+    "imgAlt": "Nabaa Adnan - Programming and Development Skills"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Samples of my work and software projects I am developing",
+    "p1_title": "Portfolio Website",
+    "p1_desc": "A professional personal website built and developed using React and CSS, fully responsive across all screens and supporting both light and dark modes.",
+    "p2_title": "Coming Soon...",
+    "p2_desc": "Work is currently underway to build additional interactive web applications, which will be published and linked with the source code soon.",
+    "demoBtn": "View Project",
+    "codeBtn": "Source Code"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "intro": "If you have any inquiries or would like to collaborate on software projects, I would be very happy to hear from you via any of the following channels:"
+  },
+  "footer": {
+    "title": "Nabaa Adnan",
+    "tagline": "Computer Engineering Techniques • Full-Stack Development",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "copy": "© {{year}} All rights reserved by Nabaa Adnan"
+  }
+}
