@@ -17,9 +17,11 @@ function About() {
         <div className="about-content">
           <h2>{t('about.title')}</h2>
 
-          <p className="about-description">
-            {t('about.intro')}
-          </p>
+          {t('about.intro') && (
+            <p className="about-description">
+              {t('about.intro')}
+            </p>
+          )}
 
           <p className="about-text">
             {t('about.description')}
